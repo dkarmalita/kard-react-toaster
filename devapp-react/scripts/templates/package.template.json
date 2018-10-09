@@ -1,0 +1,43 @@
+{
+  "name": "react-devapp",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --hot",
+    "build": "webpack --mode=production",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "keywords": [],
+  "author": {
+    "name": "Dmitriy Karmalita",
+    "email": "dmitriy.karmalita@gmail.com",
+    "url": "https://github.com/dkarmalita"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkarmalita/<GIT-PROJECT>.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkarmalita/react-form-engine.git"
+  },
+  "deprecated": false,
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "@kard/react-toaster",
+  "version": "0.1.0",
+  "description": "Source of @kard/react-toaster",
+  "main": "lib/library.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack  --mode development --progress --colors --watch",
+    "clean": "rm -rf node_modules && rm -rf ./lib && rm -rf ./coverage",
+    "publish": "git push && git push --tags",
+    "test": "jest",
+    "test:dev": "jest --watch",
+    "coverage": "open ./coverage/lcov-report/index.html"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "Dmitriy Karmalita",
+    "email": "dmitriy.karmalita@gmail.com",
+    "url": "https://github.com/dkarmalita"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkarmalita/kard-react-toaster.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkarmalita/kard-react-toaster.git"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "codecov": "^3.1.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
