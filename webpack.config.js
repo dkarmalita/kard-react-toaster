@@ -44,6 +44,12 @@ module.exports = {
       commonjs2: 'react',
       umd: 'react',
       root: 'React' // indicates global variable
+    },
+    'react-dom' : {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      umd: 'react-dom',
+      root: 'react-dom' // indicates global variable
     }
   },
 
