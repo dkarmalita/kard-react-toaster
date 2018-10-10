@@ -5,7 +5,7 @@ export const ToastWrapper = ({ content, onClose, id }) => (
   <div className='toastWrapper' key={ id }>
     <div className='closeBtn' onClick={ onClose }> &#10008; </div>
     <div className='toastContent'>
-      { content }<br/>{ id }
+      { content }
     </div>
   </div>
 )

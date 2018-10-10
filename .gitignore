@@ -3,3 +3,4 @@ coverage
 lib
 *.draft.*
 *.bak.*
+.DS_Store

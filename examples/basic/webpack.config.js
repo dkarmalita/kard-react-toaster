@@ -170,7 +170,8 @@ module.exports = {
       // 'react': path.resolve(__dirname, 'node_modules/react'),
       // 'react-dom': path.resolve(__dirname, '../..'),
 
-      '@kard/react-toaster': path.resolve(__dirname, '../src/index.js'),
+      'src': path.resolve(__dirname, './src/'),
+      '@kard/react-toaster': path.resolve(__dirname, '../../src/index.js'),
       // 'styles': path.resolve(__dirname, 'packages/components/src/styles'), // relative to the location of the webpack config file!
     },
   },

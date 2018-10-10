@@ -1,0 +1,11 @@
+.Toolbar {
+    background: firebrick;
+    width: 100%;
+    padding: 10px;
+    & button {
+        margin-right: 10px;
+    }
+    & button[disabled="disabled"] {
+
+    }
+}
