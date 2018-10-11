@@ -1,0 +1,32 @@
+:root {
+  --colorGreen  : #70ff57;
+  --colorRed    : #ff7154;
+  --colorYellow : #ffe354;
+}
+
+// #ffe354-#ff7154-#70ff57
+.Toast {
+    border: 1px solid lightgrey;
+    background-color: #EEE;
+
+    &__ok {
+      padding: 15px;
+      position: relative;
+      border-left: 6px solid var(--colorGreen);
+      width: 80%;
+    }
+
+    &__warn {
+      padding: 15px;
+      position: relative;
+      border-left: 6px solid var(--colorYellow);
+      width: 80%;
+    }
+
+    &__err {
+      padding: 15px;
+      position: relative;
+      border-left: 6px solid var(--colorRed);
+      width: 80%;
+    }
+}

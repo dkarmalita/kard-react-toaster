@@ -14,13 +14,19 @@ export const Toolbar = ({ addToast }) => (
         <Toast type='Toast__ok'>
             'This toast will be closed automatically in 2 seconds.'
         </Toast>
-        ,timeout: 2000
+        // ,timeout: 2000
     })}>'Ok' toast for 2sec</button>
+    <button onClick={()=>addToast({ content:
+        <Toast type='Toast__warn'>
+            'This toast will be closed automatically in 2 seconds.'
+        </Toast>
+        // ,timeout: 2000
+    })}>'Warn' toast for 2sec</button>
     <button onClick={()=>addToast({ content:
         <Toast type='Toast__err'>
             'This toast will be closed automatically in 2 seconds.'
         </Toast>
-        ,timeout: 2000
+        // ,timeout: 2000
     })}>'Err' toast for 2sec</button>
   </div>
 )

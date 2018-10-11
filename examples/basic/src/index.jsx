@@ -6,6 +6,8 @@ import { ToastWrapper } from './ToastWrapper'
 import { Toolbar } from './Toolbar'
 
 initToaster(ToastWrapper)
+// initToaster(({content})=><div>{ content }</div>)
+
 
 const baseMsg = '"Hello World" - auto-created text toast'
 addToast({ content: `${baseMsg} (shell be closed manually)` })
