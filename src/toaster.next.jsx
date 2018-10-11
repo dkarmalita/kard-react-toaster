@@ -8,18 +8,18 @@ const createRoot = () => {
   return n
 }
 
-export function Toaster(ToastWrapper, rootNode=null){
+export function Toaster(rootNode=null){
 
   const toasts = [] // { ref: ..., id: guid}
   const tosterRoot = !rootNode ? createRoot() : rootNode
 
   const createToast = (props, id) => ({
     id: id,
-    ref: ToastWrapper({ ...props, id, onClose: ()=>removeToast(id) }),
+    ref: this.renderToast({ ...props, id, onClose: ()=>removeToast(id) }),
+    // ref: ToastWrapper({ ...props, id, onClose: ()=>removeToast(id) }),
   })
   const renderToasts = (props) => toasts.map( toast=>toast.ref )
-  const renderToster = (props) => (<div id='toastsWrapper'>{ renderToasts() }</div>)
-  const updateToaster = () => ReactDOM.render( renderToster(), tosterRoot)
+  const updateToaster = () => ReactDOM.render( this.renderToster({ children: renderToasts() }), tosterRoot)
   const removeToast = (id) => {
     for (var i = toasts.length - 1; i >= 0; i--) {
       if(toasts[i].id === id){
