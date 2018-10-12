@@ -1,5 +1,5 @@
 import React from 'react'
-import { Toast } from 'src/toasts'
+import { Toast } from 'src/toaster'
 
 export const Toolbar = ({ addToast }) => (
   <div className='Toolbar'>
