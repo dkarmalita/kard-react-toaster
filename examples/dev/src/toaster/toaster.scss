@@ -1,11 +1,9 @@
-#toastsWrapper {
+.toastsContainer {
   display: block;
   position: absolute;
   bottom: 0px;
   left: 10%;
   width: 80%;
-  // left: 0px;
-  // width: 45%;
   .toastWrapper {
     width: 100%;
     margin: 0 0 10px 10px;
@@ -23,5 +21,10 @@
     // padding: 15px;
     border: 1px solid lightgrey;
     background-color: #EEE;
+  }
+
+  &__left45 {
+    left: 0px;
+    width: 45%;
   }
 }

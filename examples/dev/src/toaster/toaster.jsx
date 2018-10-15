@@ -1,10 +1,20 @@
 import React from 'react'
 import { Toaster } from '@kard/react-toaster'
 
+const config = {
+  left45: true,
+}
+
+const getContainerStyles = () => {
+  let result = 'toastsContainer'
+  if( config.left45 ){ result += ' toastsContainer__left45' }
+  return result
+}
+
 class StyledToaster extends Toaster {
 
   renderToster = (props) => (
-    <div id='toastsWrapper'>{ props.children }</div>
+    <div className={ getContainerStyles() }>{ props.children }</div>
   );
 
   renderToast = ({ content, onClose, id }) => (
