@@ -1,9 +1,20 @@
-## How to use
+## Description
 
-**add react-toaster to your project**
+The `@kard/react-toaster` is an extremely lightweight toaster for React applications. It contains no markup or styles but the only engine allows to create, place and remove (manually and by time-out) the toast messages.
+
+## How to install
+
+**from npm repository**
 ```sh
 npm add @kard/react-toaster
 ```
+
+**from github page**
+```sh
+npm add https://github.com/dkarmalita/kard-react-toaster.git
+```
+
+## How to use
 
 **create a toaster with styles**
 ```
