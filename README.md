@@ -17,7 +17,7 @@ npm add https://github.com/dkarmalita/kard-react-toaster.git
 ## How to use
 
 **create a toaster with styles**
-```
+```jsx
 import { Toaster } from '@kard/react-toaster'
 import './StyledToaster.css'
 
@@ -43,7 +43,7 @@ export const toaster = new StyledToaster(
 ```
 
 **create some toast template**
-```
+```jsx
 import React from 'react'
 import './Toast.css'
 
@@ -55,7 +55,7 @@ export const Toast = ({ children, type }) => (
 ```
 
 **use the toaster in the code**
-```
+```jsx
 import React from 'react'
 import { toaster } from 'src/toaster'
 import { Toast } from 'src/toaster'
