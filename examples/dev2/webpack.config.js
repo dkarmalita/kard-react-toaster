@@ -113,6 +113,7 @@ const config = {
   externals : !argv.cdn ? {} : {
     react : 'React',
     'react-dom': 'ReactDOM',
+    'babel-polyfill': 'babel-polyfill',
   },
 
   module: {
