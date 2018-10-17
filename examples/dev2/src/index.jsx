@@ -1,4 +1,4 @@
-import 'babel-polyfill' // 88kb/28.7kb
+if( !process.env.ARGV.cdn ){ require('babel-polyfill') /* 88kb/28.7kb */ }
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from 'App'

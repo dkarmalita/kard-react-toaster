@@ -113,7 +113,7 @@ const config = {
   externals : !argv.cdn ? {} : {
     react : 'React',
     'react-dom': 'ReactDOM',
-    'babel-polyfill': 'babel-polyfill',
+    'babel-polyfill': 'babelPolyfill',
   },
 
   module: {
@@ -217,9 +217,9 @@ const config = {
     ...( isBuild() ? buildPlugins() : devPlugins() ),
 
     /* We have do nothing for process.env.NODE_ENV. It is set by webpack */
-    // new webpack.DefinePlugin({
-    //   'process.env': { WP_ENV: JSON.stringify(process.env.NODE_ENV) },
-    // }),
+    new webpack.DefinePlugin({
+      'process.env.ARGV': argv,
+    }),
 
     new HtmlWebpackPlugin({
       removeComments:true,
