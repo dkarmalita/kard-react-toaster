@@ -1,0 +1,3 @@
+[submodule "examples/dev2/packages/@kard/react-store"]
+	path = examples/dev2/packages/@kard/react-store
+	url = https://github.com/dkarmalita/kard-react-store.git
