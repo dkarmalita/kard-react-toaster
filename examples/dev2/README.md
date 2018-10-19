@@ -4,10 +4,16 @@ npx ./scripts/app-init.sh
 # npx ./scripts/app-clean.sh
 ```
 
+**clone with submodules**
 ```sh
 git clone --recurse-submodules -j8 https://github.com/dkarmalita/kard-react-toaster.git
 cd devapp-react-form-engine
 npm i
+```
+
+**install submodules of clonned (earlier) repository**
+```sh
+git submodule init && git submodule update
 ```
 
 * react@^16.5.2,
